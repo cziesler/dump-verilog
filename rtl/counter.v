@@ -19,7 +19,7 @@ sub_counter i_sub_counter (
   .clk   (clk),
   .rst_n (rst_n),
   .en    (en),
-  .cnt   (cnt2)
+  .cnt   ()
 );
 
 endmodule

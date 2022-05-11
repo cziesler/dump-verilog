@@ -51,7 +51,7 @@ sub show_hier {
   foreach my $cell ($mod->cells_sorted) {
     printf($indent . "      Cell: %s\n", $cell->name);
     foreach my $pin ($cell->pins_sorted) {
-      printf($indent . "        .%s (%s)\n", $pin->name, $pin->net->name);
+      printf($indent . "        .%s (%s)\n", $pin->name, ($pin->net ? $pin->net->name : ""));
     }
   }
   foreach my $cell ($mod->cells_sorted) {
